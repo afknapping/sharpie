@@ -1,0 +1,15 @@
+---
+title: ng-test
+layout: angular-layout
+---
+
+// p 37 
+
+Say hello to:
+%input{"ng-model" => "name", type: "text"}/
+%h1 Hello, {{ name }}!
+%ul{"ng-controller" => "WorldCtrl"}
+  %li{"ng-repeat" => "country in countries"}
+    has population of {{ country.name }}
+  %hr/
+  World's population:  millions
